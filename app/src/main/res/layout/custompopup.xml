@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="475dp"
+    android:background="@color/colorPrimaryDarkPop"
+    android:padding="5dp"
+    android:layout_gravity="center">
+    <TextView
+        android:id="@+id/txtclose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textColor="@color/backgroundcolor"
+        android:text="X"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:background="@drawable/circlebackground"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logout_icon"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elina Grofild"
+            android:textStyle="bold"
+            android:textColor="@color/backgroundcolor"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Montreal,Canada"
+            android:textColor="@color/backgroundcolor"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@color/orange"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="150"
+                android:textSize="18sp"
+                android:textColor="@color/backgroundcolor"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Followers"
+                android:textSize="18sp"
+                android:textColor="@color/backgroundcolor"/>
+        </LinearLayout>
+        <LinearLayout
+            android:background="@color/green"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="19"
+                android:textSize="18sp"
+                android:textColor="@color/backgroundcolor"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cities"
+                android:textSize="18sp"
+                android:textColor="@color/backgroundcolor"/>
+        </LinearLayout>
+        <LinearLayout
+            android:background="@color/bluelight"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50"
+                android:textSize="18sp"
+                android:textColor="@color/backgroundcolor"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Posts"
+                android:textSize="18sp"
+                android:textColor="@color/backgroundcolor"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnfollow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Follow Me"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/backgroundcolor"/>
+
+</LinearLayout>
+
+<!--The following code is of base activity upon which the popup will be called.-->
+
+    <!--package com.demotxt.droidsrce.custompopup;-->
+
+    <!--import android.app.Dialog;-->
+    <!--import android.graphics.Color;-->
+    <!--import android.graphics.drawable.ColorDrawable;-->
+    <!--import android.support.v7.app.AppCompatActivity;-->
+    <!--import android.os.Bundle;-->
+    <!--import android.view.View;-->
+    <!--import android.widget.Button;-->
+    <!--import android.widget.TextView;-->
+
+    <!--public class MainActivity extends AppCompatActivity {-->
+    <!--Dialog myDialog;-->
+    <!--@Override-->
+    <!--protected void onCreate(Bundle savedInstanceState) {-->
+    <!--super.onCreate(savedInstanceState);-->
+    <!--setContentView(R.layout.activity_main);-->
+    <!--myDialog = new Dialog(this);-->
+    <!--}-->
+    <!--public void ShowPopup(View v) {-->
+    <!--TextView txtclose;-->
+    <!--Button btnFollow;-->
+    <!--myDialog.setContentView(R.layout.custompopup);-->
+    <!--txtclose =(TextView) myDialog.findViewById(R.id.txtclose);-->
+    <!--txtclose.setText("M");-->
+    <!--btnFollow = (Button) myDialog.findViewById(R.id.btnfollow);-->
+    <!--txtclose.setOnClickListener(new View.OnClickListener() {-->
+    <!--@Override-->
+    <!--public void onClick(View v) {-->
+    <!--myDialog.dismiss();-->
+    <!--}-->
+    <!--});-->
+    <!--myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));-->
+    <!--myDialog.show();-->
+    <!--}-->
+    <!--}-->

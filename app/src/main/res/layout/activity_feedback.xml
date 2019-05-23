@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/feedbackScroll"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		
+		<RelativeLayout
+			android:id="@+id/relativeLayout"
+			android:layout_width="match_parent"
+			android:layout_height="200dp"
+			android:background="@color/colorPrimary">
+			
+			<ImageView
+				android:layout_width="300dp"
+				android:layout_height="120dp"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"
+				android:background="@drawable/feedback_logo_text" />
+		</RelativeLayout>
+		
+		<TextView
+			android:id="@+id/textView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/relativeLayout"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="30dp"
+			android:text="@string/submit_your_feedback"
+			android:textSize="24sp" />
+		
+		<LinearLayout
+			android:id="@+id/linearLayout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/textView"
+			android:gravity="center"
+			android:orientation="vertical"
+			android:padding="15dp">
+			
+			<Spinner
+				android:id="@+id/spinnerDepartments"
+				android:layout_width="300dp"
+				android:layout_height="wrap_content"
+				android:layout_margin="15dp"
+				android:entries="@array/feedbackdeptlist" />
+			
+			<Spinner
+				android:id="@+id/spinnerSubjects"
+				android:layout_width="300dp"
+				android:layout_height="wrap_content"
+				android:layout_margin="15dp"
+				android:entries="@array/feedbacksublistcse" />
+			
+			<Spinner
+				android:id="@+id/spinnerTeachers"
+				android:layout_width="300dp"
+				android:layout_height="wrap_content"
+				android:layout_margin="15dp"
+				android:entries="@array/feedbackstafflistcse" />
+			
+			<Spinner
+				android:id="@+id/spinnerFeed"
+				android:layout_width="300dp"
+				android:layout_height="wrap_content"
+				android:layout_margin="15dp"
+				android:entries="@array/feedbacklist" />
+			
+			<EditText
+				android:id="@+id/EditTextFeedbackBody"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/feedbackbody"
+				android:inputType="textMultiLine"
+				android:lines="5" />
+		
+		</LinearLayout>
+		
+		<Button
+			android:id="@+id/ButtonSendFeedback"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/linearLayout"
+			android:layout_margin="30dp"
+			android:background="@color/colorPrimary"
+			android:onClick="sendFeedback"
+			android:text="@string/feedbackbutton" />
+	
+	</RelativeLayout>
+</ScrollView>

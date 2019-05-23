@@ -1,0 +1,65 @@
+<resources>
+	<string name="app_name">FeedBack App</string>
+	
+	<string name="enter_your_phone_number">Enter your phone number?</string>
+	<string name="submit_your_feedback">Submit Your Feedback</string>
+	<string name="feedbackbody">What are your thoughts about the teacher?</string>
+	<string name="feedbackbutton">Submit</string>
+	
+	<string name="feedbackDept1">CSE</string>
+	<string name="feedbackDept2">MECH</string>
+	<string name="feedbackDept3">ENTC</string>
+	<string name="feedbackDept4">CIVIL</string>
+	
+	<string name="feedback1">Good</string>
+	<string name="feedback2">Excellent</string>
+	<string name="feedback3">Average</string>
+	<string name="feedback4">Satisfactory</string>
+	
+	<string name="feedbackSub1cse">Advanced Java</string>
+	<string name="feedbackSub8cse">Network Security</string>
+	<string name="feedbackSub6cse">Software Development Lab</string>
+	<string name="feedbackSub7cse">Software Testing and Quality Assurance</string>
+	<string name="feedbackSub2cse">Software Engineering</string>
+	<string name="feedbackSub3cse">System Programming</string>
+	<string name="feedbackSub4cse">Artificial Intelligence</string>
+	<string name="feedbackSub5cse">Design and Analysis of Algorithms</string>
+	
+	<string name="feedbackstaff1cse">Prof. P B Dhas</string>
+	<string name="feedbackstaff7cse">Prof. M Mundhe</string>
+	<string name="feedbackstaff6cse">Prof. P N Borase</string>
+	<string name="feedbackstaff2cse">Prof. P R Rathod</string>
+	<string name="feedbackstaff3cse">Prof. S M Chavan</string>
+	<string name="feedbackstaff4cse">Prof S K Shelke</string>
+	<string name="feedbackstaff5cse">Prof. S G Shah</string>
+	
+	<string-array name="feedbackdeptlist">
+		<item>@string/feedbackDept1</item>
+		<item>@string/feedbackDept2</item>
+		<item>@string/feedbackDept3</item>
+		<item>@string/feedbackDept4</item>
+	</string-array>
+	
+	<string-array name="feedbacklist">
+		<item>@string/feedback1</item>
+		<item>@string/feedback2</item>
+		<item>@string/feedback3</item>
+		<item>@string/feedback4</item>
+	</string-array>
+	
+	<string-array name="feedbacksublistcse">
+		<item>@string/feedbackSub1cse</item>
+		<item>@string/feedbackSub2cse</item>
+		<item>@string/feedbackSub3cse</item>
+		<item>@string/feedbackSub4cse</item>
+		<item>@string/feedbackSub5cse</item>
+	</string-array>
+	
+	<string-array name="feedbackstafflistcse">
+		<item>@string/feedbackstaff1cse</item>
+		<item>@string/feedbackstaff2cse</item>
+		<item>@string/feedbackstaff3cse</item>
+		<item>@string/feedbackstaff4cse</item>
+		<item>@string/feedbackstaff5cse</item>
+	</string-array>
+</resources>
